@@ -1,0 +1,160 @@
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 60%;
+	height: 60px;
+	color: #333;
+	font-size: 20px;
+	position: relative;
+	margin-top:0;
+	/*z-index: 100;*/
+}
+ 
+
+header nav {
+	z-index:10;
+	margin-left: 3.2em;
+	width:auto;
+	margin:-100px .5em;
+	display: flex;
+	justify-content: space-between;
+}
+ 
+header nav ul {
+	list-style:none;
+	background: rgb(51, 51, 51,0.9);
+	padding: 0;
+	margin: 0;
+
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+	
+}
+ 
+header nav ul li:hover {
+	background: rgba(55, 255, 15, 0.836);
+	cursor: pointer;
+	transition: all 300ms;
+}
+ 
+header nav ul li a {
+	color: #fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+header nav ul li a span {
+	margin-right:5px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(17, 17, 17, 0.836);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+@media screen and (max-width: 1024px) {
+ 
+	.menu_bar {
+		margin-top: -120px;
+		display:block;
+		width:50px;
+		position: relative;
+		margin-bottom: 15px;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding:0 20px;
+		color: #333;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: left;
+		font-size: 30px;
+		line-height: 42px;
+		cursor: pointer;
+		background: #fff;
+		border-radius: 5px;
+		transform: rotateX(360deg);
+	}
+ 
+	header nav {
+		z-index: 200;
+		width: 40%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+		transition: all 0.3s;
+	}
+ 
+	header nav ul li {
+		width: 400px;
+		display: block;
+		text-decoration: none;
+		color: #fff;
+		border-bottom: 1px solid rgb(17, 17, 17,0.836);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}

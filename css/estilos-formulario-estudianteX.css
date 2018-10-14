@@ -1,0 +1,109 @@
+.contenedor-formulario-estudiante{
+    background: #ccc5c5;
+    width: 80%;/*delado*/
+    margin-left:10%;
+    margin-right:10%;
+    height: auto; /*bajo*/
+    border-radius: 5%;
+    opacity:0.7; /* Opacidad 40% */
+    filter:alpha(opacity=60); /* IE < 9.0 */
+    position: relative;
+}
+
+.encabezado{
+    text-align: center;
+    font-size: 150%;
+}
+
+.fila input[type="text"],
+input[type="email"]{
+    background: #ffffff; /*Fonde del espacio de texto*/
+    margin: 2%;
+    padding: 2%; 
+    width: 24%;
+    margin-bottom: 20px; /*separacion de los text */
+    border-radius: 10px; /* Curba de las esquinas*/
+    
+}
+
+#mencionalum,#urbanizacionalum{
+    background: #ffffff; /*Fonde del espacio de texto*/
+    margin: 2%;
+    padding: 2%; 
+    width: 29%;
+    margin-bottom: 20px; /*separacion de los text */
+    border-radius: 10px; /* Curba de las esquinas*/
+}
+
+.botones {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.fila input[type="radio"]{
+	display: none;
+}
+
+.fila #sexo {
+	display: flex;
+	flex-wrap:no-wrap;
+    justify-content:space-between;
+}
+
+.fila #sexo #hombre {
+    border-radius: 10px;
+}
+.fila #sexo #mujer {
+	border-radius: 10px;
+}
+
+.fila .label-radio {
+	background: #fff;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+    width: 49.5%;
+    margin: 1%;
+    margin-left: 3%;
+    margin-right: 2.5%;
+    border-radius: 10px;
+}
+
+.fila input[type="radio"]:checked + .label-radio {
+	background: #ee737393;
+}
+
+
+.botones input[type="button"]{
+    border-radius: 10px;
+    width: 27%;
+    padding: 2%;
+    margin: 1%;
+    font-size: 100%;
+    
+}
+
+/*
+.botones:hover input[value="incluir"]{
+    background: brown;
+}
+
+.botones:hover input[value="cambiar"]{
+    background: brown;
+}
+
+.botones:hover input[value="borrar"]{
+    background: brown;
+}
+
+.formulario input[type="submit"] {
+        width: 200px;
+        margin:0 auto;
+       
+    }
+    
+    .formulario input[type="submit"]:hover {
+        background: #4fb560;
+        color: #fff;
+    } */

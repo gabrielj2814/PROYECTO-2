@@ -1,0 +1,41 @@
+.banner{
+	width: 100%;
+}
+
+.banner ul{
+	display: flex;
+	padding: 0;
+	width: auto;
+}
+
+.banner li{
+	list-style: none;
+}
+
+.banner img{
+	width: 100%;
+	height: 130px;
+}
+
+
+@media screen and (min-width: 480px){
+	.banner img{
+		width: 100%;
+		height: 100%;
+}
+}
+
+@media screen and (min-width: 768px){
+
+	.banner img{
+		height: 100px;
+		margin-top: -0px;
+
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.banner img{
+		margin-top: -0px;
+	}
+}

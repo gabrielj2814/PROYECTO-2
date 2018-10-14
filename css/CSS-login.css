@@ -1,0 +1,18 @@
+body{
+    background: url("../img/fondo-slide.jpg") center center fixed;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+#contenedor-formulario-login{
+    background: #111;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: 1px solid green;
+    margin-top:50px;
+    color: #fff;
+}
+.form-group>label{
+    font-size: 1.2em;
+}

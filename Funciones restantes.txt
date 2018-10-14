@@ -1,0 +1,10 @@
+*Reportes:
+	-Los reportes en si
+
+
+*DB:
+	-Crear un usuario de en la base de datos con privilejios de Administrador
+
+*Seguridad:
+	-Crear opcion de respaldo de la base de datos
+	-crear opcion para fucionar la base de datos actualmente en uso con un archivo sql o SCV

@@ -1,0 +1,162 @@
+header{
+	display: none;
+}
+
+#encabezado{
+	width: 50px;
+	height: auto;
+	display: none;
+}
+#zona-menu{
+	display: table;
+	background-color:#111;
+	border-radius:10px;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-color: rgb(34, 34, 34,0.8);
+	
+}
+.icon-menu{
+	font-size: 2.5em;
+	color:#fff;
+	padding: 0.5% 0.5%;
+	cursor: pointer;
+}
+
+
+#checkbox-menu{
+	display: none;
+} 
+
+.menu{
+	width: 30%;
+	position: absolute;
+	z-index:10;
+	transform: translateX(-100%);
+	transition: all 0.5s;
+}
+
+.menu ul li{
+	list-style: none;
+	border-bottom: 1px solid rgb(43, 255, 0);
+	transition: all 0.5s;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 15px 0px;
+	transition: all 0.5s;
+}
+
+.menu ul li span{
+	font-size: 1.7em;
+	text-decoration: none;
+	color: #fff;
+	font-family:Microsoft Yi Baiti;
+}
+
+#menu li:active span{
+	transform: scale(0.95);
+}
+
+.menu ul li ul{
+	background:  #111;
+}
+.menu ul li a:hover{
+	background: rgb(23, 139, 0);
+	color: #111;
+}
+
+.menu ul li ul li a:hover{
+	background: rgb(23, 108, 0);
+	color: #111;
+}
+
+.menu ul li ul{
+	display: none;
+}
+
+ .submenu ul.mostrar-submenu{
+	display: block;
+}
+.submenu ul li a{
+	padding-left: 15px
+}
+
+.submenu ul li span{
+	display: none;
+	float: right;
+	margin: 0px;
+}
+
+.submenu ul li:hover span{
+	display: inline-block
+}
+
+#checkbox-menu:checked ~ .menu{
+	transform: translateX(0%);
+}
+@media screen and (max-width:1600px){
+	
+}
+@media screen and (max-width:1024px){
+	
+}
+@media screen and (max-width:800px){
+	header,#encabezado{
+		display: block;
+	}
+}
+@media screen and (max-width:480px){
+
+}
+/*
+#contenedor-icono-menu{
+	background: black;
+	display: table;
+	width: auto;
+	height: auto;
+	margin-left: 1%;
+	border-radius: 10px;
+}
+#zona-menu nav.mostrar-menu{
+	left: 0%;
+}
+#zona-menu>nav>#menu{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#zona-menu nav{
+	width: 25%;
+	background: rgba(0, 0, 0, 0.87);
+	position: absolute;
+	z-index: 20;
+	left:-25%;
+	display: table;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+#zona-menu>nav>#menu>li>a{
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #fff;
+	line-height: 3rem;
+	font-family:Microsoft Yi Baiti;
+}
+#menu li span{
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #fff;
+	line-height: 3rem;
+	font-family:Microsoft Yi Baiti;
+}
+#zona-menu>nav>#menu>li{
+	width: 100%;
+	border-bottom: 1px solid #fff;
+}
+*/

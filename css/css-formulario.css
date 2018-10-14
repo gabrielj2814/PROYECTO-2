@@ -1,0 +1,17 @@
+#contenedor-formulario{
+    background: #B3BBC8FF;
+    /*background: #CCC;*/
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: 1px solid green;
+}
+.form-group>label{
+    color:#111;
+}
+#barra-de-herramientas{
+    margin: 10px 0px;
+}
+#barra-botonera>.col-auto>.btn-group{
+    margin-top:25px;
+}
